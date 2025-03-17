@@ -11,6 +11,70 @@
     ├── planning                # 规划包（主要节点）
     ├── traj_opt                # 轨迹优化包
     └── vis_utils               # 可视化工具包
+
+
+.
+├── README.md
+├── sh_utils
+│   └── pub_triger.sh
+└── src
+    ├── odom_vis
+    │   ├── odom_visualization
+    │   │   ├── CMakeLists.txt
+    │   │   ├── Makefile
+    │   │   ├── bin
+    │   │   │   ├── odom_visualization
+    │   │   │   └── odom_visualization_vicon45
+    │   │   ├── launch
+    │   │   │   ├── real_vis.launch
+    │   │   │   ├── sim_vis.launch
+    │   │   │   └── vins_vis.launch
+    │   │   ├── mainpage.dox
+    │   │   ├── meshes
+    │   │   │   ├── f250.dae
+    │   │   │   └── hummingbird.mesh
+    │   │   ├── package.xml
+    │   │   └── src
+    │   │       ├── odom_visualization.cpp
+    │   │       └── odom_visualization_plate.cpp
+    │   └── pose_utils
+    │       ├── CMakeLists.txt
+    │       ├── Makefile
+    │       ├── include
+    │       │   └── pose_utils.h
+    │       ├── package.xml
+    │       └── src
+    │           └── pose_utils.cpp
+    ├── planning
+    │   ├── CMakeLists.txt
+    │   ├── config
+    │   │   └── rviz_sim.rviz
+    │   ├── launch
+    │   │   └── perching.launch
+    │   ├── nodelet_plugin.xml
+    │   ├── package.xml
+    │   └── src
+    │       └── planning_nodelet.cpp
+    ├── traj_opt
+    │   ├── CMakeLists.txt
+    │   ├── include
+    │   │   └── traj_opt
+    │   │       ├── lbfgs_raw.hpp
+    │   │       ├── minco.hpp
+    │   │       ├── poly_traj_utils.hpp
+    │   │       ├── root_finder.hpp
+    │   │       └── traj_opt.h
+    │   ├── package.xml
+    │   └── src
+    │       └── traj_opt_perching.cc
+    └── vis_utils
+        ├── CMakeLists.txt
+        ├── include
+        │   └── vis_utils
+        │       └── vis_utils.hpp
+        └── package.xml
+
+
 ```
 ```
 traj_opt (轨迹优化包)
